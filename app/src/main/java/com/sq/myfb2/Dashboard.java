@@ -20,8 +20,7 @@ private long timeBackPressed;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+
 
         username = findViewById(R.id.userDashboard);
 
@@ -33,7 +32,7 @@ private long timeBackPressed;
                         .setAction("Action", null).show();
             }
         });
-        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+
 
         Intent i = getIntent();
         String uname = i.getStringExtra("USERNAME");
